@@ -1,3 +1,6 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
 .App {
   text-align: center;
 }
@@ -35,4 +38,58 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.custom-card{
+    position: relative;
+    right: -100px;
+    z-index: 1;
+    width: 31rem;
+    min-height: 90vh;
+}
+.sidebar{
+    background: #2f82d8;
+    width: 15rem;
+}
+
+.bg-img{
+    min-height: 100vh;
+}
+.main-contain{
+    display: flex;
+}
+.form-label{
+    font-weight: bold;
+}
+.form-select{
+    width: 100%;
+    height: 25px;
+}
+.form-calc-btn{
+    background: #2f82d8;
+}
+.form-loan-amt{
+    color: #2f82d8;
+}
+@media only screen and (max-width: 768px){
+    .main-contain{
+       flex-direction: column-reverse;
+    }
+    .sidebar{
+        background: white;
+        width: 100%;
+    }
+    .custom-card{
+        position: absolute;
+        right: auto;
+        bottom: -100px;
+        width: 90%;
+        margin-left: 5%;
+        min-height: auto;
+    }
+    .bg-img{
+        min-height: 580px;
+        object-fit: cover;
+    }
 }
